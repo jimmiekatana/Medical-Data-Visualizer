@@ -11,16 +11,18 @@ This  project involves creating  a chart similar to examples/Figure_1.png, where
 
 4.Clean the data. Filter out the following patient segments that represent incorrect data:
 
-*diastolic pressure is higher than systolic (Keep the correct data with (df['ap_lo'] <= df['ap_hi']))
+-diastolic pressure is higher than systolic (Keep the correct data with (df['ap_lo'] <= df['ap_hi']))
 
-*height is less than the 2.5th percentile (Keep the correct data with (df['height'] >= df['height'].quantile(0.025)))
+-height is less than the 2.5th percentile (Keep the correct data with (df['height'] >= df['height'].quantile(0.025)))
 
-*height is more than the 97.5th percentile
+-height is more than the 97.5th percentile
 
-*weight is less than the 2.5th percentile
+-weight is less than the 2.5th percentile
 
-*weight is more than the 97.5th percentile
+-weight is more than the 97.5th percentile
 
 
-4.Create a correlation matrix using the dataset. Plot the correlation matrix using seaborn's heatmap(). Mask the upper triangle. The chart should look like examples/Figure_2.png.
+4.Create a correlation matrix using the dataset. Plot the correlation matrix using seaborn's heatmap(). Mask the upper triangle.
+
+The chart should look like examples/Figure_2.png.
 Any time a variable is set to None, make sure to set it to the correct code.
